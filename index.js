@@ -326,3 +326,18 @@ function checkProperty(value){
 }
 console.log(checkProperty("phone"));
 */
+
+/*Nested Objects
+var myCar = {
+  car: {
+    interior: {
+      pedals: "brakes",
+      "passenger seat": "crumbs",
+    },
+    exterior: {
+      scratches: 4,
+    },
+  },
+};
+console.log(myCar.car.interior["passenger seat"]);
+*/
