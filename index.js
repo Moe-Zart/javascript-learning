@@ -187,9 +187,9 @@ function golfScore(par, strokes) {
 console.log(golfScore(5, 8));
 */
 
-//Switch Statements
+/*Switch Statement
+var answer;
 function switchFirstAttempt(value) {
-  var answer = "";
   switch (value) {
     case 1:
       answer = "alpha";
@@ -203,7 +203,74 @@ function switchFirstAttempt(value) {
     case 4:
       answer = "delta";
       break;
+      default:
+        answer = "not labelled"
   }
   return answer;
 }
-console.log(switchFirstAttempt(2))
+console.log(switchFirstAttempt(5))
+*/
+
+/* Switch Statement Practice
+function switchPractice(value) {
+  switch (value) {
+    case "bob":
+      answer = "Marley";
+      break;
+    case 42:
+      answer = "The Answer";
+      break;
+    case 1:
+      answer = "There is no #1";
+      break;
+    case 7:
+      answer = "Ate Nine";
+      break;
+    default:
+      answer = "";
+      break;
+  }
+  return answer;
+}
+console.log(switchPractice("bob"));
+*/
+
+/*Switch and If challenge
+
+//when theres a low card, the count goes up, vice versa. middle value stays the same.
+//if final count is positive, then the player should bet high
+//if final count is 0 or negative, then the player should bet low
+
+var count = 0;
+function cc(card) {
+  switch (card) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++;
+      break;
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+      count--;
+      break;
+  }
+  var holdbet = "Hold";
+  if (count <= 0) {
+    holdbet = "bet low";
+  } else {
+    holdbet = "bet high";
+  }
+  return count + " " + holdbet;
+}
+cc(2);
+cc(3);
+cc(7);
+cc("K");
+cc("A");
+console.log(cc(4));
+*/
