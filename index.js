@@ -135,3 +135,75 @@ function isItGreaterThan(value){
   console.log(isItGreaterThan(55))
   console.log(isItLessThan(2))
   */
+
+/*if, else if, else statements
+  function size(num){
+    if(num<5){
+      return "Tiny";
+    }
+    else if (num<10){
+      return "Small";
+    }
+    else if (num<15){
+      return "Medium";
+    }
+    else if (num<20){
+      return "Large";
+    }
+    else{
+      return "Huge";
+    }
+  }
+  console.log(size(20));
+  */
+
+/*Functions, Arrays and If Statement practice
+var golfNameArray = [
+  "Hole in one!",
+  "Eagle",
+  "Birdie",
+  "Par",
+  "Bogey",
+  "Double Bogey",
+  "Go Home!",
+];
+function golfScore(par, strokes) {
+  if (strokes == 1) {
+    return golfNameArray[0];
+  } else if (strokes <= par - 2) {
+    return golfNameArray[1];
+  } else if (strokes == par - 1) {
+    return golfNameArray[2];
+  } else if (strokes == par) {
+    return golfNameArray[3];
+  } else if (strokes == par + 1) {
+    return golfNameArray[4];
+  } else if (strokes == par + 2) {
+    return golfNameArray[5];
+  } else {
+    return golfNameArray[6];
+  }
+}
+console.log(golfScore(5, 8));
+*/
+
+//Switch Statements
+function switchFirstAttempt(value) {
+  var answer = "";
+  switch (value) {
+    case 1:
+      answer = "alpha";
+      break;
+    case 2:
+      answer = "beta";
+      break;
+    case 3:
+      answer = "gamma";
+      break;
+    case 4:
+      answer = "delta";
+      break;
+  }
+  return answer;
+}
+console.log(switchFirstAttempt(2))
