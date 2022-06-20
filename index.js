@@ -274,3 +274,55 @@ cc("K");
 cc("A");
 console.log(cc(4));
 */
+
+/*Objects basics
+//creating the object
+var myCat = {
+  name: "Coco",
+  legs: 4,
+  age: 3,
+  friends: [],
+  "its gender": "Male",
+};
+//change name property
+myCat.name = "Coco Chanel";
+//add meow property
+myCat.meow = '"Maw Maw"';
+//delete friends cause he has none
+delete myCat.friends;
+//accessing the object
+var myCatsNameAndGender = myCat.name + ", " + myCat["its gender"]; //one word property uses not, but two + word property uses brackets
+console.log(myCatsNameAndGender + " " + myCat.meow);
+*/
+
+/*Functions and Objects practice
+function nameLookup(value){
+var lookup = {
+  alpha: "Adams",
+  bravo: "Boston",
+  charlie: "Chicago",
+  delta: "Denver",
+  echo: "Easy",
+  foxtrot: "Frank",
+};
+return lookup[value];
+} 
+console.log(nameLookup("bravo"));
+*/
+
+/*Objects: hasOwnProperty method
+var myObj = {
+  phone: "apple",
+  watch: "gucci",
+  water: "Mount Franklin",
+};
+function checkProperty(value){
+ if (myObj.hasOwnProperty(value)){
+  return myObj[value];
+ }
+ else{
+  return "Not Found";
+ }
+}
+console.log(checkProperty("phone"));
+*/
