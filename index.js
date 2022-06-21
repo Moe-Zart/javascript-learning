@@ -480,3 +480,52 @@ return contacts[i][prop] || "No such property"
 var data = loopUpProfile("Sherlock","likes")
 console.log(data)
 */
+
+/*Random Decimals
+function randomTest(){
+var value = Math.random();
+return value;
+}
+console.log(randomTest());
+*/
+
+/*Random Whole Number
+function randomTest(){
+  var value = Math.floor(Math.random()*20);
+  return value;
+  }
+  console.log(randomTest());
+  */
+
+/*Random Number with Range
+function randomRange(min, max) {
+  value = Math.floor(Math.random() * (max - min + 1)) + min; //the (max-min+1) is the difference between the range, and the +min makes it start from the min.
+  return value;
+}
+console.log(randomRange(10, 20));
+*/
+
+/*Ternary Operator
+function checkEqual(a, b) {
+  return a === b ? true : false;
+}
+console.log(checkEqual(1, 7));
+*/
+
+/*Nested Ternary Operator
+// return positive if number is positive, same with negative, return zero if number is 0
+function checkSign(num) {
+  return num > 0 ? "positive" : num < 0 ? "negative" : "zero";
+}
+console.log(checkSign(-7));
+*/
+
+/*Arrow Functions
+var myConcat = function (array1, array2) {
+  return array1.concat(array2); //note: concat is concatinate, which means to combine
+};
+console.log(myConcat([1, 2], [3, 4, 5]));
+//Now Write the same thing as an arrow function
+var myConcat = (array1, array2) => array1.concat(array2); //removed the 'function', curly braces and the return
+console.log(myConcat([1, 2], [3, 4, 5]));
+*/
