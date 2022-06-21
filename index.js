@@ -400,10 +400,83 @@ console.log(array);
 
 /*For Loop odd numbers
 var array = [];
-for (i = 1; i < 10; i += 2) {
+for (var i = 1; i < 10; i += 2) {
   array.push(i);
 }
 console.log(array);
 */
 
+/*For loop even numbers counting backwards
+var array = [];
+for (var i = 10; i > 0; i -= 2) {
+  array.push(i);
+}
+console.log(array);
+*/
 
+/*For loop totals
+var array = [2,4,7,3,3,5,6];
+var total = 0;
+for(var i = 0;i<array.length;i++){
+  total+=array[i];
+}
+console.log(total);
+*/
+
+/*Nested For Loop
+function multiplyAll(array) {
+  var product = 1;
+  for (var i = 0; i < array.length; i++) {
+    for (var j = 0; j < array[i].length; j++) {
+      product *= array[i][j];
+    }
+  }
+  return product;
+}
+
+var finalProduct = multiplyAll([
+  [1, 2],
+  [3, 4],
+  [5, 6, 7],
+]);
+console.log(finalProduct);
+*/
+
+/* For Loop Challenge
+var contacts = [
+  {
+    firstName: "Akira",
+    lastName: "Laine",
+    number: "0543236543",
+    likes: ["Pizza", "Coding", "Brownie Points"],
+  },
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    number: "0994372684",
+    likes: ["Hogwarts", "Magic", "Hagrid"],
+  },
+  {
+    firstName: "Sherlock",
+    lastName: "Holmes",
+    number: "0487345643",
+    likes: ["Intriguing Cases", "Violin"],
+  },
+  {
+    firstName: "Kristian",
+    lastName: "Vos",
+    number: "unknown",
+    likes: ["Javascript", "Gaming", "Foxes"],
+  },
+];
+function loopUpProfile(name,prop){
+ for(var i=0; i<contacts.length;i++){
+  if (contacts[i].firstName === name){
+return contacts[i][prop] || "No such property"
+  }
+ }
+ return "No such contact";
+}
+var data = loopUpProfile("Sherlock","likes")
+console.log(data)
+*/
