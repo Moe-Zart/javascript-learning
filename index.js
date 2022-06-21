@@ -341,3 +341,69 @@ var myCar = {
 };
 console.log(myCar.car.interior["passenger seat"]);
 */
+
+/* Object challenge
+var collection = {
+  2548: {
+    album: "Slippery When Wet",
+    artist: "Bon Jovi",
+    tracks: ["Let it Rock", "You Give Love a Bad Name"],
+  },
+  2468: {
+    album: "1999",
+    artist: "Prince",
+    tracks: ["1999", "Little Red Corvette"],
+  },
+  1245: {
+    artist: "Robert Palmer",
+    tracks: [],
+  },
+  5439: {
+    album: "ABBA Gold",
+  },
+};
+var collectionCopy = JSON.parse(JSON.stringify(collection));
+  
+function updateRecords(i, pr, value){
+ if (value===""){
+  delete collection[i][pr]
+ }
+ else if (pr === "tracks"){
+  collection[i][pr] = collection[i][prop] || [];
+  collection[i][pr].push(value);
+ }
+ else{
+  collection[i][pr] = value;
+ }
+ return collection;
+}
+console.log(updateRecords(549, "", "d"));
+*/
+
+/*while loop
+var array = [];
+var i = 0;
+while (i < 6) {
+  array.push(i);
+  i++;
+}
+console.log(array);
+*/
+
+/*For Loop
+var array = [];
+for (var i = 0; i < 6; i++) {
+  array.push(i);
+}
+console.log(array);
+*/
+
+/*For Loop odd numbers
+var array = [];
+for (i = 1; i < 10; i += 2) {
+  array.push(i);
+}
+console.log(array);
+*/
+
+
